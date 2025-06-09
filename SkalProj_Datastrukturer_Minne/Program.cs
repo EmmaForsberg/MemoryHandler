@@ -72,12 +72,20 @@ namespace SkalProj_Datastrukturer_Minne
              * Below you can see some inspirational code to begin working.
             */
 
-            //List<string> theList = new List<string>();
-            //string input = Console.ReadLine();
-            //char nav = input[0];
-            //string value = input.substring(1);
+            List<string> theList = new List<string>();
+            string input = Console.ReadLine();
+            char nav = input[0];
+            string value = input.Substring(1);
 
-            //switch(nav){...}
+            switch (nav)
+            {
+                case '+': theList.Add(value);  break;
+                case '-': theList.Remove(value); break;
+
+                default:
+                    Console.WriteLine("Use only + or -");
+                    break;
+            }
         }
 
         /// <summary>
